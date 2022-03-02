@@ -1,7 +1,13 @@
 const mongoose = require("mongoose");
+const URL="mongodb+srv://siddhu:siddhu@cluster0.oboi7.mongodb.net/csvDatabase?retryWrites=true&w=majority";
 
 /*******************MAKING CONNECTION***************************/
-mongoose.connect("mongodb://localhost/CSV");
+//mongoose.connect("mongodb://localhost/CSV");
+mongoose.connect(URL).then(()=>{
+console.log("database connected");
+}).catch(() => {
+ console.log("database error");
+});
 //setting it to db
 const db = mongoose.connection;
 
