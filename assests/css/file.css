@@ -6,6 +6,7 @@
 body{
     font-family: Helvetica;
     -webkit-font-smoothing: antialiased;
+    background-color:blueviolet;
 }
 h2{
     text-align: center;
